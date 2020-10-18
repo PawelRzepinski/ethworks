@@ -1,0 +1,11 @@
+.hero__text {
+    .hero__title {
+        color: $white;
+        margin-bottom: 48px;
+        max-width: 287px;
+        @include media-breakpoint-up(md) {
+            max-width: initial;
+            margin-bottom: 74px;
+        }
+    }
+}

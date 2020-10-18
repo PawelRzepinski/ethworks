@@ -1,0 +1,112 @@
+.footer {
+
+    @include media-breakpoint-up(md) {
+        background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+    }
+
+    &__main {
+        position: relative;
+        background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+        padding: 32px 16px;
+        @include media-breakpoint-up(md) {
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            padding: 48px 16px;
+        }
+        @include media-breakpoint-up(lg) {
+            padding: 48px 132px 58px 132px;
+        }
+
+        .footer__contact {
+            @include media-breakpoint-up(md) {
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            p {
+                margin: 16px 0;
+                text-align: center;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.32px;
+                color: #263396;
+                @include media-breakpoint-up(md) {
+                    margin-top: 0;
+                }
+            }
+
+            a {
+                display: block;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                text-decoration-line: underline;
+                color: $blue;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        button {
+            display: block;
+            box-shadow: 0px 12px 44px rgba($azure, 0.6);
+            max-width: 220px;
+            height: fit-content;
+            margin: 0 auto;
+            @include media-breakpoint-up(md) {
+                margin: 0;
+            }
+    
+        }
+    }
+
+    &__links {
+        padding: 16px 16px 19px 16px;
+
+         ul {
+             display: flex;
+             justify-content: space-between;
+             flex-wrap: wrap;
+             @include media-breakpoint-up(md) {
+                flex-wrap: nowrap;
+                padding: 0 47px;
+                max-width: 811px;
+                margin: 0 auto;
+            }
+
+             li {
+                 width: 50%;
+                 text-align: center;
+                 white-space: nowrap;
+                 margin-bottom: 16px;
+                 @include media-breakpoint-up(md) {
+                    border-right: 2px solid #9CA4C7;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+             }
+
+             a {
+                 &:hover {
+                     text-decoration: underline;
+                 }
+             }
+
+             li, a {
+                font-size: 12px;
+                line-height: 200%;
+                text-align: center;
+                color: #45515F;
+                text-decoration: none;
+             }
+         }
+    }
+}

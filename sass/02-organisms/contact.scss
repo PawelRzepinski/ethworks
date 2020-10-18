@@ -1,0 +1,45 @@
+.contact {
+    background-color: $darkBg;
+    color: $white;
+    padding: 88px 16px 78px 16px;
+
+    &__info {
+        text-align: center;
+        font-size: 14px;
+        line-height: 129%;
+        margin: 26px 0 50px 0;
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+            line-height: 133%;
+        }
+    }
+
+    &__formWrapper {
+        background-color: $purple;
+        padding: 84px 16px 24px 16px;
+        margin: 0 auto;
+        border-radius: 13px;
+        max-width: 401px;
+
+        input {
+            margin-bottom: 24px;
+
+            &:nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 37px 0;
+            
+            input {
+                width: 24px;
+                height: 24px;
+                margin: 0 8px 0 0;
+                border-radius: 4px;
+            }
+        }
+    }
+}

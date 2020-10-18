@@ -1,0 +1,61 @@
+/* BOOTSTRAP
+--------------------------------------------------------------------------------------*/
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/functions";
+@import './global/variables-main.scss';
+@import './global/variables'; //  bootstrap!
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/modal";
+
+
+
+
+/* GLOBAL
+--------------------------------------------------------------------------------------*/
+@import './global/reset.scss';
+
+/* 00 - ATOMS
+--------------------------------------------------------------------------------------*/
+@import './00-atoms/logo.scss';
+@import './00-atoms/html-body.scss';
+@import './00-atoms/input.scss';
+@import './00-atoms/buttons.scss';
+@import './00-atoms/typograpgy.scss';
+
+/* 01 - MOLECULES
+--------------------------------------------------------------------------------------*/
+@import './01-molecules/hero-bg.scss';
+@import './01-molecules/hero-text.scss';
+
+/* 02 - ORGANISMS
+--------------------------------------------------------------------------------------*/
+@import './02-organisms/header.scss';
+@import './02-organisms/hero.scss';
+@import './02-organisms/newsletter.scss';
+@import './02-organisms/slider.scss';
+@import './02-organisms/team.scss';
+@import './02-organisms/contact.scss';
+@import './02-organisms/footer.scss';
+@import './02-organisms/modal.scss';
+
+/* 03 - TEMPLATES
+--------------------------------------------------------------------------------------*/
+
+
+/* 04 - PAGES
+--------------------------------------------------------------------------------------*/
+/* HELPERS
+--------------------------------------------------------------------------------------*/
+@import './helpers/slick.scss';
+
+
+
+// .modal {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 101;
+//     background-color: pink;
+// }

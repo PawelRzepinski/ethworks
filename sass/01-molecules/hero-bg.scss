@@ -1,0 +1,35 @@
+.hero__bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+
+    .bg--mobile {
+        display: block;
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+    .bg--desktop {
+        display: none;
+        @include media-breakpoint-up(lg) {
+            display: block;
+            min-height: 1350px;
+        }
+    }
+
+    img {
+        width: 100%;
+        min-height: 890px;
+        object-fit: cover;
+        @include media-breakpoint-up(sm) {
+            max-height: 1024px;
+        }
+        @include media-breakpoint-up(md) {
+            max-height: 1270px;
+        }
+    }
+}
